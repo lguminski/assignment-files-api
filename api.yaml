@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: A simple app
+  version: '3.0.1'
+paths:
+  /files:
+    get:
+      description: Fetch list of items in from object storage
+      responses:
+        200:
+          description: A list of items from the object bucket
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    fileName:
+                      type: string
+        500:
+          description: Unable to fetch file list from S3 bucket
