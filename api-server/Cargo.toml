@@ -14,6 +14,8 @@ hyper = "0.14.20"
 log = "0.4.17"
 logger = "0.4.0"
 openapi_client = { version = "3.0.1", path = "../api-lib" }
+openssl = "0.10.42"
 rust-s3 = "0.32.3"
 swagger = "6.2.1"
 tokio = { version = "1.21.2", features = ["rt", "rt-multi-thread", "macros"] }
+tokio-openssl = "0.6.3"
