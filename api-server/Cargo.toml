@@ -13,7 +13,7 @@ futures = "0.3.24"
 hyper = "0.14.20"
 log = "0.4.17"
 logger = "0.4.0"
-openapi_client = { version = "3.0.1", path = "../api-lib" }
+openapi_lib = { version = "3.0.1", path = "../api-lib" }
 openssl = "0.10.42"
 rust-s3 = "0.32.3"
 swagger = "6.2.1"

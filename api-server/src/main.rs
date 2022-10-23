@@ -1,8 +1,6 @@
-//! Main binary entry point for openapi_client implementation.
+//! Main binary entry point for openapi_lib implementation.
 
 #![allow(missing_docs)]
-
-//use clap::{App, Arg};
 
 mod server;
 
@@ -12,12 +10,6 @@ mod server;
 #[tokio::main]
 async fn main() {
     env_logger::init();
-
-    //let matches = App::new("server")
-    //    .arg(Arg::with_name("https")
-    //        .long("https")
-    //        .help("Whether to use HTTPS or not"))
-    //    .get_matches();
 
     let addr = "127.0.0.1:8080";
 
