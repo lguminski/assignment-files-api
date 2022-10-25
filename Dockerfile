@@ -1,11 +1,11 @@
+# ---------------------- build image
 FROM rust:1.64-buster AS app_builder
 COPY api-server /app/src/api-server
 COPY api-lib /app/src/api-lib
 WORKDIR /app/src/api-server
 RUN cargo build --release
 RUN strip target/release/api-server
-
-
+#----------------------- final image
 FROM debian:buster AS app
 ENV LANG=C.UTF-8
 # Install openssl
